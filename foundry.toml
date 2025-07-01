@@ -4,8 +4,10 @@ out = "out"
 libs = ["lib"]
 
 # eth_rpc_url = '${ALCHEMY_SEPOLIA_FORK_URL}'
+sepolia = "${ALCHEMY_SEPOLIA_FORK_URL}"
 
 # etherscan_api = '${ETHERSCAN_API}'
+
 
 remappings = [
     "openzeppelin-contracts-08/=lib/openzeppelin-contracts/contracts/",

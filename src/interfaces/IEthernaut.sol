@@ -7,7 +7,7 @@ interface Level {
   function validateInstance(address payable _instance, address _player) external returns (bool);
 }
 
-interface Ethernaut {
+interface IEthernaut {
     function createLevelInstance(Level _level) external payable;
     function submitLevelInstance(address payable _instance) external;
 }
