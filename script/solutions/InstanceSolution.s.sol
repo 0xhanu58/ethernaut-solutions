@@ -18,7 +18,7 @@ contract InstanceSolution is Script, Helpers {
         myAddr = vm.addr(pvtKey);
         console.log("Address:",myAddr);
 
-        ILevel level = ILevel(0x7E0f53981657345B31C59aC44e9c21631Ce710c7);
+        ILevel level = ILevel(0x7E0f53981657345B31C59aC44e9c21631Ce710c7); // the supplied address is of InstanceFactory.sol contract on sepolia eth
         
         vm.startBroadcast(pvtKey);
         
@@ -33,6 +33,8 @@ contract InstanceSolution is Script, Helpers {
 
         // submitting on ethernaut
         submitInstance(deployedInstanceByEthernaut);
+
+        getStats(myAddr);
 
         vm.stopBroadcast();
     }
