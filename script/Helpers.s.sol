@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+pragma experimental ABIEncoderV2;
+pragma solidity >=0.6.2;
 
 import {Script} from "forge-std/Script.sol";
 import {console} from "forge-std/console.sol";
